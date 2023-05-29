@@ -23,6 +23,10 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserDao userDao;
 
+    public UserServiceImpl(){
+        System.out.println("service running...");
+    }
+
     /*
        public void setNum(int num) {
        this.num = num;
