@@ -16,4 +16,8 @@
 
         <bean id="bookDao" class="com.itheima.dao.impl.BookDaoImpl" />-->
 
+<!--    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+
+    </bean>-->
+
 </beans>

@@ -1,5 +1,6 @@
 package com.itheima;
 
+import com.alibaba.druid.pool.DruidDataSource;
 import com.itheima.dao.BookDao;
 import com.itheima.dao.UserDao;
 import com.itheima.service.UserService;
@@ -19,5 +20,7 @@ public class App {
         BookDao bookDao = (BookDao) ctx.getBean("bookDao");
         bookDao.save();
 
+        DruidDataSource dataSource = (DruidDataSource) ctx.getBean("dataSource");
+        System.out.println(dataSource);
     }
 }
